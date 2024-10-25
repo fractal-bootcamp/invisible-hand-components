@@ -1,4 +1,3 @@
-import React from 'react';
 import { Meta, StoryFn } from '@storybook/react';
 import ProductCard from '../components/ProductCard';
 
@@ -6,6 +5,9 @@ import ProductCard from '../components/ProductCard';
 export default {
     title: 'Components/ProductCard',
     component: ProductCard,
+    parameters: {
+        layout: 'centered',
+    },
 } as Meta;
 // Define a template for the ProductCard story
 const Template: StoryFn = (args) => <ProductCard {...args} />;
