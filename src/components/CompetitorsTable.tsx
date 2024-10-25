@@ -23,7 +23,7 @@ interface CompetitorTableProps {
 // Corrected component name
 export const CompetitorsTable: React.FC<CompetitorTableProps> = ({ competitors }) => {
   return (
-    <Table>
+    <Table className="w-full bg-white rounded-lg overflow-hidden shadow-lg">
       <TableCaption>A list of competitor prices for Airbone Vitamin C.</TableCaption>
       <TableHeader>
         <TableRow>
